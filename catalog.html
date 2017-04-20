@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>HTML Academy: Девайс</title>
+</head>
+<body>
+	<header class="header">
+		<div class="wrapper">
+			<div class="header-logo"><a href="index.html"><img src="logo.img" alt="Device">Device</a></div>
+			<nav>
+				<div class="header-input">
+					<input type="search">
+					<a href="catalog.html">Каталог товаров</a>
+				</div>
+				<div class="header-cart">
+					<p>
+						<a href="#">Войти</a>
+						<span>
+							<a href="#">Сравнить</a
+							<a href="#">Корзина</a>
+						</span>
+					</p>
+					<ul>
+						<li><a href="#">Доставка</a></li>
+						<li><a href="#">Гарантия</a></li>
+						<li><a href="#">Контакты</a></li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+	</header>
+	<main>
+	<div class="wrapper">
+		<h1>Моноподы для селфи</h1>
+		<ul class="bradcrumbs">
+			<li><a href="">Главная</a></li>
+			<li><a href="">Каталог товаров</a></li>
+			<li>Моноподы для селфи</li>
+		</ul>
+	</div>
+	<aside>
+		<div class="filter">
+			<span>Фильтр:</span>
+		</div>
+		<form action="">
+			<fieldset> 
+				<legend>Стоимость</legend>
+				<input type="range" min="0" max="10000" onchange="document.getElementById('rangeValue').innerHTML = this.value;" list="rangeList"> <span id="rangeValue">5000</span>
+			</fieldset>
+			<fieldset>
+				<legend>Цвет</legend>
+				<label for="check1"><input type="checkbox" name="black" value="val1" id="check1" checked>Черный</label>
+				<label for="check2"><input type="checkbox" name="white" value="val2" id="check2">Черный</label>
+				<label for="check3"><input type="checkbox" name="blue" value="val3" id="check3" checked>Черный</label>
+				<label for="check4"><input type="checkbox" name="red" value="val4" id="check4" checked>Черный</label>
+				<label for="check5"><input type="checkbox" name="pink" value="val5" id="check5">Черный</label>
+			</fieldset>
+			<fieldset>
+				<legend>Bluetooth</legend>
+				<label for="yes"><input type="radio" name="bluetooth" id="yes" checked>Есть</label>
+				<label for="no"><input type="radio" name="bluetooth" id="no">Нет</label>
+			</fieldset>
+			<input type="submit" value="Показать">
+		</form>
+	</aside>
+	</main>
+	<footer class="footer">
+		<div class="wrapper">
+			<div class="footer-logo">
+				<h2>device</h2>
+				<p>г. Москва, ул. Строителей, 15</p>
+			</div>
+			<div class="footer-menu">
+				<nav>
+					<ul>
+						<li><a href="#">Доставка</a></li>
+						<li><a href="#">Гарантия</a></li>
+						<li><a href="#">Контакты</a></li>
+					</ul>
+				</nav>
+				<ul class="footer-social">
+					<li><a href="https://facebook.com/htmlacademy"><img src="http://placehold.it/38x38" alt="facebook"></a></li>
+					<li><a href="https://instagram.com/htmlacademy"><img src="http://placehold.it/38x38" alt="instagram"></a></li>
+					<li><a href="https://twitter.com/htmlacademy"><img src="http://placehold.it/38x38" alt="twitter"></a></li>
+				</ul>
+			</div>
+			<div class="footer-phone">
+				<ul>
+					<li><a href="#">Войти</a></li>
+					<li><a href="#">Сравнить</a></li>
+					<li><a href="#">Корзина</a></li>
+				</ul>
+				<p>Тел.: +7 (495) 495-95-95</p>
+				<a href="http://placehold.it/38x38"><img src="http://placehold.it/30x38" alt="HTML Academia"></a>
+			</div>
+		</div>
+	</footer>
+</div>
+</body>
+</html>
