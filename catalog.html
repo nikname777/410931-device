@@ -2,26 +2,33 @@
 <html lang="ru">
 <head>
 	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/style.css">
 	<title>HTML Academy: Девайс</title>
 </head>
 <body>
 	<header class="header">
 		<div class="wrapper">
-			<div class="header-logo"><a href="index.html"><img src="img/device-logo.png" width="163" height="36" alt="Device"></a></div>
+			<div class="header-logo"><a href="index.html">Device</a></div>
 			<nav>
-				<div class="header-input">
-					<input type="search">
+				<div class="header-search">
+					<form acton="">
+					  <input type="search">
+					  <button class="icon">Найти</button>
+					</form>
 					<a href="catalog.html">Каталог товаров</a>
 				</div>
 				<div class="header-cart">
-					<p>
-						<a href="#">Войти</a>
+					<div class="enter">
+						<span>
+							<a href="#">Валентин Петухов</a>
+							<a href="#">Выйти</a>
+						</span>
 						<span>
 							<a href="#">Сравнить</a
 							<a href="#">Корзина</a>
 						</span>
-					</p>
-					<ul>
+					</div>
+					<ul class="delivery">
 						<li><a href="#">Доставка</a></li>
 						<li><a href="#">Гарантия</a></li>
 						<li><a href="#">Контакты</a></li>
@@ -46,7 +53,9 @@
 		<form action="">
 			<fieldset> 
 				<legend>Стоимость</legend>
-				<input type="range" min="0" max="10000" onchange="document.getElementById('rangeValue').innerHTML = this.value;" list="rangeList"> <span id="rangeValue">5000</span>
+				<div class="range">
+					<span>0</span><span>5000</span>
+				</div>
 			</fieldset>
 			<fieldset>
 				<legend>Цвет</legend>
@@ -145,7 +154,7 @@
 					<li><a href="#">Корзина</a></li>
 				</ul>
 				<p>Тел.: +7 (495) 495-95-95</p>
-				<a href="http://htmlacademy.ru"><img src="img/logo.png" widht="27" height="34" alt="HTML Academy"></a>
+				<a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo.png" widht="27" height="34" alt="HTML Academy"></a>
 			</div>
 		</div>
 	</footer>
