@@ -8,31 +8,38 @@
 <body>
 	<header class="header">
 		<div class="header-wrapper">
-			<div class="header-logo">Device</div>
+			<div class="header-logo"><a href="index.html"><img src="img/device-logo.png" width="163" height="36" alt="Device"></a></div>
 			<nav>
 				<div class="top-section clearfix">
 					<div class="header-input">
-						<form acton="">
-						  <input type="search">
-						  <button class="icon">Найти</button>
-						</form>
-						<a href="catalog.html">Каталог товаров</a>
+						<div class="main-search-wrapper">
+							<form class="clearfix" action="">
+							  <input class="main-search" type="search" placeholder="Поиск по сайту">
+							  <button class="button-find">Найти</button>
+							</form>
+						</div>
+						<a class="catalog" href="catalog.html">Каталог товаров</a>
 					</div>
 					<div class="header-cart">
 						<div class="enter">
-							<span>
-								<a href="#">Войти</a>
-							</span>
-							<span>
-								<a href="#">Сравнить</a>
+							<div class="user-box">
+								<a href="#">Валентин Петухов</a>
+								<a href="#">Выйти</a>
+							</div>
+							<div class="cart-box">
 								<a href="#">Корзина</a>
-							</span>
+							  <a href="#">Сравнить</a>
+							</div>
 						</div>
-						<ul class="right-menu">
-							<li><a href="#">Доставка</a></li>
-							<li><a href="#">Гарантия</a></li>
-							<li><a href="#">Контакты</a></li>
-						</ul>
+						<div class="contacts">
+							<div class="contacts-left">
+								<a href="#">Доставка</a>
+								<a href="#">Гарантия</a>
+							</div>	
+							<div class="contacts-right">
+								<a href="#">Контакты</a>
+							</div>
+						</div>
 					</div>
 				</div>
 				<div class="bottom-section clearfix">
@@ -55,44 +62,53 @@
 	<main>
 		<div class="main-head">
 			<h1 class="h1">Моноподы для селфи</h1>
-			<ul class="bradcrumbs">
+			<ul class="bradcrumbs clearfix">
 				<li><a href="#">Главная</a></li>
 				<li><a href="#">Каталог товаров</a></li>
 				<li>Моноподы для селфи</li>
 			</ul>
 		</div>
 		<div class="main-container">
-			<div class="container-top"></div>
 			<div class="container clearfix">
 				<aside class="aside">
 					<div class="filter">
 						<b>Фильтр:</b>
 					</div>
-					<form action="">
+					<form class="filter-form" action="">
 						<fieldset> 
-							<legend>Стоимость</legend>
-							<div class="range">
-								<span>0</span><span>5000</span>
-							</div>
+							<div class="cost-filter">
+								<legend>Стоимость</legend>
+				        <div class="range-controls">
+				          <div class="scale">
+				            <div class="bar" style="margin-left: 0; width: 60%"></div>
+				          </div>
+				          <div class="toggle toggle-min" tabindex="0"></div>
+				          <div class="toggle toggle-max" tabindex="0"></div>
+				        </div>
+				        <div class="price-controls">
+				          <label class="min-price">от <input name="min-price" type="text" value="0"></label>
+				          <label class="max-price">до <input name="max-price" type="text" value="5000"></label>
+				        </div>
+					    </div> 
 						</fieldset>
 						<fieldset>
 							<legend>Цвет</legend>
 							<ul>
-								<li><label for="check1"><input type="checkbox" name="black" value="val1" id="check1" checked>Черный</label></li>
-								<li><label for="check2"><input type="checkbox" name="white" value="val2" id="check2">Черный</label></li>
-								<li><label for="check3"><input type="checkbox" name="blue" value="val3" id="check3" checked>Черный</label></li>
-								<li><label for="check4"><input type="checkbox" name="red" value="val4" id="check4" checked>Черный</label></li>
-								<li><label for="check5"><input type="checkbox" name="pink" value="val5" id="check5">Черный</label></li>
+								<li><input type="checkbox" name="black" value="val1" id="check1" checked><label for="check1">Черный</label></li>
+								<li><input type="checkbox" name="white" value="val2" id="check2"><label for="check2">Белый</label></li>
+								<li><input type="checkbox" name="blue" value="val3" id="check3" checked><label for="check3">Синий</label></li>
+								<li><input type="checkbox" name="red" value="val4" id="check4" checked><label for="check4">Красный</label></li>
+								<li><input type="checkbox" name="pink" value="val5" id="check5"><label for="check5">Розовый</label></li>
 							</ul>
 						</fieldset>
 						<fieldset>
 							<legend>Bluetooth</legend>
 							<ul>
-								<li><label for="yes"><input type="radio" name="bluetooth" id="yes" checked>Есть</label></li>
-								<li><label for="no"><input type="radio" name="bluetooth" id="no">Нет</label></li>
+								<li><input type="radio" name="bluetooth" id="yes" checked><label for="yes">Есть</label></li>
+								<li><input type="radio" name="bluetooth" id="no"><label for="no">Нет</label></li>
 							</ul>
 						</fieldset>
-						<input type="submit" value="Показать">
+						<div class="show-button-form"><input type="submit" value="Показать"></div>
 					</form>
 				</aside>
 				<div class="goods">
@@ -101,18 +117,21 @@
 							<b>Сортировка:</b>
 						</div>
 						<ul class="sort-options">
-							<li><a href="#">По цене</a></li>
+							<li class="sort-active-link"><a href="#">По цене</a></li>
 							<li><a href="#">По типу</a></li>
 							<li><a href="#">По популярности</a></li>
 						</ul>
+						<div class="sort-icons">
+							<a href="#"></a>
+							<a class="active" href="#"></a>
+						</div>
 					</div>
 					<div class="goods-wrapper clearfix">
 						<div class="good-item">
 							<div class="good-img">
 								<img src="img/item-img1.png" widht="360" height="380" alt="Любительская селфи-палка">
-								<div class="good-img-hover">
-									<a href="#">В корзину</a>
-								</div>
+								<div class="link-more link-to-cart"><a href="#">В корзину</a></div>
+								<a class="add-to-compare" href="#">Добавить к сравнению</a>
 							</div>
 							<div class="good-description clearfix">
 								<h2 class="h2"><a href="#">Любительская селфи-палка</a></h2>
@@ -122,9 +141,8 @@
 						<div class="good-item">
 							<div class="good-img">
 								<img src="img/item-img2.png" widht="360" height="380" alt="Профессиональная селфи-палка">
-								<div class="good-img-hover">
-									<a href="#">В корзину</a>
-								</div>
+								<div class="link-more link-to-cart"><a href="#">В корзину</a></div>
+								<a class="add-to-compare" href="#">Добавить к сравнению</a>
 							</div>
 							<div class="good-description">
 								<h2 class="h2"><a href="#">Профессиональная селфи-палка</a></h2>
@@ -134,9 +152,8 @@
 						<div class="good-item">
 							<div class="good-img">
 								<img src="img/item-img3.png" widht="360" height="380" alt="Непотопляемая селфи-палка">
-								<div class="good-img-hover">
-									<a href="#">В корзину</a>
-								</div>
+								<div class="link-more link-to-cart"><a href="#">В корзину</a></div>
+								<a class="add-to-compare" href="#">Добавить к сравнению</a>
 							</div>
 							<div class="good-description">
 								<h2 class="h2"><a href="#">Непотопляемая селфи-палка</a></h2>
@@ -144,11 +161,10 @@
 							</div>
 						</div>
 						<div class="good-item">
-							<div class="good-img">
+							<div class="good-img new">
 								<img src="img/item-img4.png" widht="360" height="380" alt="Селфи-палка Следуй за мной">
-								<div class="good-img-hover">
-									<a href="#">В корзину</a>
-								</div>
+								<div class="link-more link-to-cart"><a href="#">В корзину</a></div>
+								<a class="add-to-compare" href="#">Добавить к сравнению</a>
 							</div>
 							<div class="good-description">
 								<h2 class="h2"><a href="#">Селфи-палка "Следуй за мной"</a></h2>
@@ -157,11 +173,11 @@
 						</div>
 					</div>
 					<ul class="pager">
-						<li><a href="#">Назад</a></li>
-						<li><a href="#" class="now">1</a></li>
+						<li><a class="back" href="#">Назад</a></li>
+						<li><a class="now" href="#">1</a></li>
 						<li><a href="#">2</a></li>
 						<li><a href="#">3</a></li>
-						<li><a href="#">Вперед</a></li>
+						<li><a class="forward" href="#">Вперед</a></li>
 					</ul>
 				</div>
 			</div>
@@ -170,7 +186,9 @@
 	<footer class="footer">
 		<div class="wrapper clearfix">
 			<div class="footer-logo">
-				<h2 class="h2">device</h2>
+				<div class="footer-logo-img">
+					<a href="index.html"><img src="img/device-logo-yellow.png" width="163" height="36" alt="Device"></a>
+				</div>
 				<p>г. Москва, ул. Строителей, 15</p>
 			</div>
 			<div class="footer-center">
@@ -180,16 +198,16 @@
 					<li><a href="#">Контакты</a></li>
 				</ul>
 				<ul class="footer-social">
-					<li><a href="https://facebook.com/htmlacademy"><img src="http://placehold.it/38x38" alt="facebook"></a></li>
-					<li><a href="https://instagram.com/htmlacademy"><img src="http://placehold.it/38x38" alt="instagram"></a></li>
-					<li><a href="https://twitter.com/htmlacademy"><img src="http://placehold.it/38x38" alt="twitter"></a></li>
+					<li><a href="https://facebook.com/htmlacademy"><img src="img/facebook.png" width="39" height="38" alt="facebook"></a></li>
+					<li><a href="https://instagram.com/htmlacademy"><img src="img/insta.png" width="39" height="38" alt="instagram"></a></li>
+					<li><a href="https://twitter.com/htmlacademy"><img src="img/twitter.png" width="38" height="38" alt="twitter"></a></li>
 				</ul>
 			</div>
 			<div class="footer-phone">
 				<ul>
-					<li><a href="#">Войти</a></li>
-					<li><a href="#">Сравнить</a></li>
-					<li><a href="#">Корзина</a></li>
+					<li><a class="footer-enter-link" href="#">Выйти</a></li>
+					<li><a class="footer-compare-link" href="#">Сравнить</a></li>
+					<li><a class="footer-cart-link" href="#">Корзина</a></li>
 				</ul>
 				<p>Тел.: +7 (495) 495-95-95</p>
 				<a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo.png" widht="27" height="34" alt="HTML Academy"></a>
