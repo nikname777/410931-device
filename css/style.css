@@ -869,7 +869,7 @@ input[type="checkbox"]:focus + label::before {
 }
 
 input[type="checkbox"]:hover + label::before {
-	background-color: #fff;
+	background-color: #CECECE;
 }
 
 input[type="radio"] + label {
@@ -1492,49 +1492,20 @@ input[type="radio"]:checked + label::after {
 }
 
 .brands-list a{
-	display: inline-block;
-	width: 260px;
-	height: 100px;
 }
 
-.client-1 a {
-	background-image: url("../img/client-1.jpg");
-	background-repeat: no-repeat;
+.brands-list img {
+	-webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  filter: grayscale(100%);
+  filter: gray; /* IE 6-9 */
 }
 
-.client-2 a {
-	background-image: url("../img/client-2.jpg");
-	background-repeat: no-repeat;
-}
-
-.client-3 a {
-	background-image: url("../img/client-3.jpg");
-	background-repeat: no-repeat;
-}
-
-.client-4 a {
-	background-image: url("../img/client-4.jpg");
-	background-repeat: no-repeat;
-}
-
-.client-1 a:hover {
-	background-image: url("../img/client-color-1.jpg");
-	background-repeat: no-repeat;
-}
-
-.client-2 a:hover {
-	background-image: url("../img/client-color-2.jpg");
-	background-repeat: no-repeat;
-}
-
-.client-3 a:hover {
-	background-image: url("../img/client-color-3.jpg");
-	background-repeat: no-repeat;
-}
-
-.client-4 a:hover {
-	background-image: url("../img/client-color-4.jpg");
-	background-repeat: no-repeat;
+.brands-list img:hover {
+	filter: none;
+  -webkit-filter: grayscale(0);
 }
 
 .brands-list li:last-child {
