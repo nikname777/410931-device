@@ -2,6 +2,7 @@
 <html lang="ru">
 <head>
 	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">
 	<title>HTML Academy: Девайс</title>
 </head>
@@ -13,7 +14,7 @@
 				<div class="top-section clearfix">
 					<div class="header-input">
 						<div class="main-search-wrapper">
-							<form class="clearfix" action="">
+							<form class="clearfix" action="get">
 							  <input class="main-search" type="search" placeholder="Поиск по сайту">
 							  <button class="button-find">Найти</button>
 							</form>
@@ -26,8 +27,8 @@
 								<a href="#">Войти</a>
 							</div>
 							<div class="cart-box">
-								<a href="#">Корзина</a>
-							  <a href="#">Сравнить</a>
+								<a href="#">Сравнить</a>
+							  <a href="#">Корзина</a>
 							</div>
 						</div>
 						<div class="contacts">
@@ -61,7 +62,7 @@
 	<section class="slider">
 		<div class="slider-wrapper clearfix">
 			<div class="slider-img">
-				<img src="img/slider-image.png" widht="560" height="483" alt="Самая длинная палка для селфи">
+				<img src="img/slider-image.png" width="560" height="483" alt="Самая длинная палка для селфи">
 			</div>
 			<div class="slider-description">
 				<span class="slider-number">01</span>
@@ -133,7 +134,7 @@
 		<ul class="popular-list clearfix">
 			<li>
 				<a class="popular-item" href="#">
-					<div href="#" class="popular-link">
+					<div class="popular-link">
 						<img src="img/popular1.png" width="97" height="55"  alt="Виртуальная реальность">
 					</div>
 					<p>Виртуальная<br>реальность</p>
@@ -141,7 +142,7 @@
 			</li>
 			<li>
 				<a class="popular-item" href="#">
-					<div href="#" class="popular-link">
+					<div class="popular-link">
 						<img src="img/popular2.png" width="86" height="117" alt="Моноподы для селфи">
 					</div>
 					<p>Моноподы<br> для селфи</p>
@@ -149,7 +150,7 @@
 			</li>
 			<li>
 				<a class="popular-item" href="#">
-					<div href="#" class="popular-link">
+					<div class="popular-link">
 						<img src="img/popular3.png" width="71" height="87" alt="Экшн-камеры">
 					</div>
 					<p>Экшн-камеры</p>
@@ -157,7 +158,7 @@
 			</li>
 			<li>
 				<a class="popular-item" href="#">
-					<div href="#" class="popular-link">
+					<div class="popular-link">
 						<img src="img/popular4.png" width="107" height="65" alt="Фитнес-браслеты">
 					</div>
 					<p>Фитнес-браслеты</p>
@@ -165,7 +166,7 @@
 			</li>
 			<li>
 				<a class="popular-item" href="#">
-					<div href="#" class="popular-link">
+					<div class="popular-link">
 						<img src="img/popular5.png" width="56" height="98" alt="Умные часы">
 					</div>
 					<p>Умные часы</p>
@@ -173,7 +174,7 @@
 			</li>
 			<li>
 				<a class="popular-item" href="#">
-					<div href="#" class="popular-link">
+					<div class="popular-link">
 						<img src="img/popular6.png" width="132" height="69" alt="Квадрокоптеры">
 					</div>
 					<p>Квадрокоптеры</p>
@@ -182,18 +183,15 @@
 		</ul>
 	</section>
 	<section class="delivery">
-		<div class="delivery-wrapper clearfix">
+		<div class="delivery-wrapper-2 clearfix">
 			<div class="delivery-list">
 				<div><a class="delivery-link" href="#"><span>Доставка</span></a></div>
 				<div><a class="delivery-link" href="#"><span>Гарантия</span></a></div>
 				<div><a class="delivery-link active-delivery-link" href="#"><span>Кредит</span></a></div>
 			</div>
-			<div class="delivery-description">
+			<div class="delivery-description credit-slide">
 				<h2 class="h2">Кредит</h2>
 				<p>Залезть в долговую яму стало проще! Кредитные<br> консультанты подберут для вас наиболее выгодные<br> условия кредита. Выгодные для нашего банка, разумеется.</p>	
-			</div>
-			<div class="delivery-image">
-				<img src="img/credit.png" width="260" height="207" alt="Гарантия">
 			</div>
 			<div class="write-us">
 				<form action="get">
@@ -214,18 +212,15 @@
 				</form>
 			</div>
 		</div>
-		<div class="delivery-wrapper-2 clearfix">
+		<div class="delivery-wrapper clearfix">
 			<div class="delivery-list">
 				<div><a class="delivery-link" href="#"><span>Доставка</span></a></div>
 				<div><a class="delivery-link active-delivery-link" href="#"><span>Гарантия</span></a></div>
 				<div><a class="delivery-link" href="#"><span>Кредит</span></a></div>
 			</div>
-			<div class="delivery-description">
+			<div class="delivery-description warranty-slide">
 				<h2 class="h2">Гарантия</h2>
 				<p>Если из-за возгарания купленного у нас товара у вас сгорит<br> дом — не переживайте, мы выдадим вам новый.<br> Товар, не дом, конечно же.</p>	
-			</div>
-			<div class="delivery-image">
-				<img src="img/warranty.png" width="260" height="207" alt="Гарантия">
 			</div>
 		</div>
 		<div class="delivery-wrapper-1 clearfix">
@@ -234,12 +229,9 @@
 				<div><a class="delivery-link" href="#"><span>Гарантия</span></a></div>
 				<div><a class="delivery-link" href="#"><span>Кредит</span></a></div>
 			</div>
-			<div class="delivery-description">
+			<div class="delivery-description delivery-slide">
 				<h2 class="h2">Доставка</h2>
 				<p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>	
-			</div>
-			<div class="delivery-image">
-				<img src="img/delivery.png" width="260" height="207" alt="Гарантия">
 			</div>
 		</div>
 	</section>
@@ -267,7 +259,7 @@
 			<div class="about-us">
 				<h2 class="h2">Контакты</h2>
 				<p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-				<img src="img/map.jpg" widht="560" height="222" alt="Карта">
+				<img src="img/map.jpg" width="560" height="222" alt="Карта">
 				<div class="link-more"><a href="#">Напишите нам</a></div>
 			</div>
 			<div class="map-box">
@@ -277,9 +269,11 @@
 		</div>
 	</section>
 	<footer class="footer">
-		<div class="wrapper clearfix">
+		<div class="footer-wrapper clearfix">
 			<div class="footer-logo">
-				<img src="img/device-logo-yellow.png" width="163" height="36" alt="Device">
+				<div class="footer-logo-img">
+					<a><img src="img/device-logo-yellow.png" width="163" height="36" alt="Device"></a>
+				</div>
 				<p>г. Москва, ул. Строителей, 15</p>
 			</div>
 			<div class="footer-center">
@@ -305,6 +299,5 @@
 			</div>
 		</div>
 	</footer>
-</div>
 </body>
 </html>
