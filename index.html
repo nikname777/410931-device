@@ -42,25 +42,28 @@
 						</div>
 					</div>
 				</div>
-				<div class="bottom-section clearfix">
-					<ul>
-						<li><a href="#">Виртуальная реальность</a></li>
-						<li><a href="#">Моноподы для селфи</a></li>
-						<li><a href="#">Экшн-камеры</a></li>
-					</ul>
-					<ul>
-						<li><a href="#">Фитнес-браслеты</a></li>
-						<li><a href="#">Умные часы</a></li>
-					</ul>
-					<ul>
-						<li><a href="#">Квадрокоптеры</a></li>
-					</ul>
-				</div>
 			</nav>
 		</div>
+		<div class="bottom-section hidden clearfix">
+		<ul>
+			<li><a href="#">Виртуальная реальность</a></li>
+			<li><a href="#">Моноподы для селфи</a></li>
+			<li><a href="#">Экшн-камеры</a></li>
+		</ul>
+		<ul>
+			<li><a href="#">Фитнес-браслеты</a></li>
+			<li><a href="#">Умные часы</a></li>
+		</ul>
+		<ul>
+			<li><a href="#">Квадрокоптеры</a></li>
+		</ul>
+	</div>
 	</header>
 	<section class="slider">
-		<div class="slider-wrapper clearfix">
+	<input type="radio" id="btn-1" name="toggle1" checked>
+  <input type="radio" id="btn-2" name="toggle1">
+  <input type="radio" id="btn-3" name="toggle1">
+		<div class="slide" id="slide1">
 			<div class="slider-img">
 				<img src="img/slider-image.png" width="560" height="483" alt="Самая длинная палка для селфи">
 			</div>
@@ -70,14 +73,7 @@
 				<p>Самая длинная палка для селфи доступна в нашем магазине.<br>
 					Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
 				</p>
-				<div class="more clearfix">
-					<div class="link-more"><a href="#">подробнее</a></div>
-					<ul class="slider-nav">
-						<li class="active-slider-link"><a href="#"></a></li>
-						<li><a href="#"></a></li>
-						<li><a href="#"></a></li>
-					</ul>
-				</div>
+				<div class="link-more link-more-slider"><a href="#">подробнее</a></div>
 				<ul class="features">
 					<li><b>8,5 м</b><p>длина палки</p></li>
 					<li><b>5 кг</b><p>вес палки</p></li>
@@ -85,29 +81,22 @@
 				</ul>
 			</div>
 		</div>
-		<div class="slider-wrapper-2">
+		<div class="slide" id="slide2">
 			<div class="slider-img">
 				<img src="img/slider-image-2.png" width="560" height="496" alt="Браслет для похудения">
 			</div>
 			<div class="slider-description">
-				<span class="slider-number">03</span>
+				<span class="slider-number">02</span>
 				<h2 class="h2">Худеем<br> правильно!</h2>
 				<p>Мотивирующие фитнес-браслеты помогут найти в себе силы<br> не пропускать занятия и соблюдать диету.
 				</p>
-				<div class="more clearfix">
-					<div class="link-more"><a href="#">подробнее</a></div>
-					<ul class="slider-nav">
-						<li><a href="#"></a></li>
-						<li class="active-slider-link"><a href="#"></a></li>
-						<li><a href="#"></a></li>
-					</ul>
-				</div>
+				<div class="link-more link-more-slider"><a href="#">подробнее</a></div>
 				<ul class="features">
 					<li><b>48 часов</b><p>Без подзарядки</p></li>
 				</ul>
 			</div>
 		</div>
-		<div class="slider-wrapper-3 clearfix">
+		<div class="slide" id="slide3">
 			<div class="slider-img">
 				<img src="img/slider-image-3.png" width="599" height="388" alt="Квадракоптер">
 			</div>
@@ -115,23 +104,21 @@
 				<span class="slider-number">03</span>
 				<h2 class="h2">Порхает как бабочка,<br> жалит как пчела!</h2>
 				<p>Этот обычный, на первый взгляд, квадрокоптер оснащен<br> мощным лазером, замаскированным под стандартную камеру.</p>
-				<div class="more clearfix">
-					<div class="link-more"><a href="#">подробнее</a></div>
-					<ul class="slider-nav">
-						<li><a href="#"></a></li>
-						<li><a href="#"></a></li>
-						<li class="active-slider-link"><a href="#"></a></li>
-					</ul>
-				</div>
+				<div class="link-more link-more-slider"><a href="#">подробнее</a></div>
 				<ul class="features">
 					<li><b>800 м</b><p>Дальность полета</p></li>
 					<li><b>50 м</b><p>Радиус поражения</p></li>
 				</ul>
 			</div>
 		</div>
+		<div class="slider-controls">
+      <label class="active-slider-control" for="btn-1"></label>
+      <label for="btn-2"></label>
+      <label for="btn-3"></label>
+    </div>
 	</section>
 	<section class="popular">
-		<ul class="popular-list clearfix">
+		<ul class="popular-list">
 			<li>
 				<a class="popular-item" href="#">
 					<div class="popular-link">
@@ -182,56 +169,30 @@
 			</li>
 		</ul>
 	</section>
-	<section class="delivery">
-		<div class="delivery-wrapper-2 clearfix">
-			<div class="delivery-list">
-				<div><a class="delivery-link" href="#"><span>Доставка</span></a></div>
-				<div><a class="delivery-link" href="#"><span>Гарантия</span></a></div>
-				<div><a class="delivery-link active-delivery-link" href="#"><span>Кредит</span></a></div>
+	<section class="services-slider">
+		<div class="services-wrapper clearfix">
+		<input type="radio" id="btn-4" name="toggle" checked>
+	  <input type="radio" id="btn-5" name="toggle">
+	  <input type="radio" id="btn-6" name="toggle">
+			<div class="services-list">
+				<div><label class="services-link active-services-link" for="btn-4"><span>Доставка</span></label></div>
+        <div><label class="services-link" for="btn-5"><span>Гарантия</span></label></div>
+        <div><label class="services-link" for="btn-6"><span>Кредит</span></label></div>
+				<!-- <div><a class="delivery-link active-delivery-link" href="#"><span>Доставка</span></a></div>
+				<div><a  href="#"><span>Гарантия</span></a></div>
+				<div><a class="delivery-link" href="#"><span>Кредит</span></a></div> -->
 			</div>
-			<div class="delivery-description credit-slide">
+			<div class="services delivery-slide" id="delivery-slide1">
+				<h2 class="h2">Доставка</h2>
+				<p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>	
+			</div>
+			<div class="services credit-slide hidden" id="delivery-slide2">
 				<h2 class="h2">Кредит</h2>
 				<p>Залезть в долговую яму стало проще! Кредитные<br> консультанты подберут для вас наиболее выгодные<br> условия кредита. Выгодные для нашего банка, разумеется.</p>	
 			</div>
-			<div class="write-us">
-				<form action="get">
-					<button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
-					<div class="form-box">
-						<div class="form-data-box">
-							<label for="your-name">Ваше имя:</label><br>
-							<input type="text" name="name" id="your-name" placeholder="Представьтесь, пожалуйста">
-						</div>
-						<div class="form-data-box">
-							<label for="your-email">Ваш e-mail:</label><br>
-							<input type="text" name="name" id="your-email" placeholder="Для отправки ответа">
-						</div>
-					</div>
-					<label for="your-text">Текст письма:</label><br>
-					<textarea placeholder="В свободной форме" id="your-text">В свободной форме</textarea>
-					<span class="link-more"><a href="#">Отправить</a></span>
-				</form>
-			</div>
-		</div>
-		<div class="delivery-wrapper clearfix">
-			<div class="delivery-list">
-				<div><a class="delivery-link" href="#"><span>Доставка</span></a></div>
-				<div><a class="delivery-link active-delivery-link" href="#"><span>Гарантия</span></a></div>
-				<div><a class="delivery-link" href="#"><span>Кредит</span></a></div>
-			</div>
-			<div class="delivery-description warranty-slide">
+			<div class="services warranty-slide hidden" id="delivery-slide3">
 				<h2 class="h2">Гарантия</h2>
-				<p>Если из-за возгарания купленного у нас товара у вас сгорит<br> дом — не переживайте, мы выдадим вам новый.<br> Товар, не дом, конечно же.</p>	
-			</div>
-		</div>
-		<div class="delivery-wrapper-1 clearfix">
-			<div class="delivery-list">
-				<div><a class="delivery-link active-delivery-link" href="#"><span>Доставка</span></a></div>
-				<div><a class="delivery-link" href="#"><span>Гарантия</span></a></div>
-				<div><a class="delivery-link" href="#"><span>Кредит</span></a></div>
-			</div>
-			<div class="delivery-description delivery-slide">
-				<h2 class="h2">Доставка</h2>
-				<p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>	
+				<p>Если из-за возгарания купленного у нас товара у вас сгорит<br> дом — не переживайте, мы выдадим вам новый.<br> Товар, не дом, конечно же.</p>
 			</div>
 		</div>
 	</section>
@@ -254,13 +215,13 @@
 					<li>Автотрейдинг</li>
 					<li>ЖелДорЭкспедиция</li>
 				</ul>
-				<div class="link-more"><a href="#">Подробнее о нас</a></div>
+				<div class="link-more about-us-more"><a href="#">Подробнее о нас</a></div>
 			</div>
 			<div class="about-us">
 				<h2 class="h2">Контакты</h2>
 				<p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
 				<img src="img/map.jpg" width="560" height="222" alt="Карта">
-				<div class="link-more"><a href="#">Напишите нам</a></div>
+				<div class="link-more about-us-more"><a href="#">Напишите нам</a></div>
 			</div>
 			<div class="map-box">
 				<button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
@@ -299,5 +260,23 @@
 			</div>
 		</div>
 	</footer>
+	<div class="write-us hidden">
+		<form action="get">
+			<button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+			<div class="form-box">
+				<div class="form-data-box">
+					<label for="your-name">Ваше имя:</label><br>
+					<input type="text" name="name" id="your-name" placeholder="Представьтесь, пожалуйста">
+				</div>
+				<div class="form-data-box">
+					<label for="your-email">Ваш e-mail:</label><br>
+					<input type="text" name="name" id="your-email" placeholder="Для отправки ответа">
+				</div>
+			</div>
+			<label for="your-text">Текст письма:</label><br>
+			<textarea placeholder="В свободной форме" id="your-text"></textarea>
+			<div class="show-button-form"><input type="submit" value="Отправить"></div>
+		</form>
+	</div>
 </body>
 </html>
