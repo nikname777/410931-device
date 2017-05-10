@@ -969,12 +969,12 @@ label.active-slider-control,
 }
 
 .input-color-filter,
-input[type='radio'] {
+.input-bluetooth-selection {
     display: none;
 }
 
 .input-color-filter + label,
-input[type='radio'] + label {
+.input-bluetooth-selection + label {
     line-height: 20px;
 
     position: relative;
@@ -1052,30 +1052,11 @@ input[type='radio'] + label {
     background-color: transparent;
 }
 
-.input-color-filter:checked + label:active::before {
-    background-color: #c4c4c4;
-}
-
-/* .input-color-filter:checked:active + label::after {
-	content: "";
-	position: absolute;
-	width: 8px;
-	height: 4px;
-	border: 2px solid transparent;
-	transform: rotate(-45deg);
-	border-top: none;
-	border-right: none;
-	background-color: transparent;
-	top: 6px;
-	left: 7px;
-	display: none;
-} */
-
-input[type='radio'] + label {
+.input-bluetooth-selection + label {
     margin-bottom: 22px;
 }
 
-input[type='radio'] + label::before {
+.input-bluetooth-selection + label::before {
     position: absolute;
     top: 0;
     left: 0;
@@ -1092,15 +1073,15 @@ input[type='radio'] + label::before {
     background-color: transparent;
 }
 
-input[type='radio']:hover + label::before {
+.input-bluetooth-selection:hover + label::before {
     border-color: #bcbcbc;
 }
 
-input[type='radio']:active + label::before {
+.input-bluetooth-selection:active + label::before {
     border-color: #acacac;
 }
 
-input[type='radio']:checked + label::after {
+.input-bluetooth-selection:checked + label::after {
     position: absolute;
     top: 7px;
     left: 7px;
