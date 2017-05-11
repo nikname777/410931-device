@@ -21,6 +21,7 @@ body {
   font-size: 15px;
   font-weight: normal;
   line-height: 30px;
+  padding-top: 40px;
 
   position: relative;
 
@@ -152,7 +153,6 @@ img {
 
   width: 1160px;
   min-height: 300px;
-  margin-top: 40px;
 
   color: #000000;
   background-color: #f7e296;
@@ -2566,17 +2566,29 @@ label.active-slider-control,
   width: 200px;
 }
 
-.map-box {
+.modal-content-map {
   position: absolute;
   z-index: 200;
-  top: 35px;
-  left: 100px;
+  top: 50%;
+  left: 50%;
 
+	display: none;
   width: 960px;
   height: 550px;
-  margin: 0 auto;
-  margin-bottom: 100px;
+  margin-top: -275px;
+  margin-right: -480px;
 
   -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
           box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+
+  background: #e9e5dc url('../img/big-map.jpg');
+}
+
+.modal-content-show {
+  display: block;
+  animation: bounce 0.6s;
+}
+
+.modal-error {
+  animation: shake 0.6s;
 }
