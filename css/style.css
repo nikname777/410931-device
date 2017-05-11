@@ -575,10 +575,11 @@ img {
 
   width: 1160px;
   min-height: 550px;
-  margin-top: -105px;
+  margin-top: -130px;
   margin-right: auto;
-  margin-bottom: 38px;
+  margin-bottom: 41px;
   margin-left: auto;
+  outline: 1px dashed #000;
 
   color: #000000;
   color: #464646;
@@ -638,7 +639,7 @@ img {
 
 .slider-description::before {
   position: absolute;
-  top: 33px;
+  top: 35px;
   left: 0;
 
   width: 100px;
@@ -659,7 +660,7 @@ img {
   z-index: 2;
 
   margin: 0;
-  margin-top: 74px;
+  margin-top: 79px;
   margin-bottom: 20px;
 
   color: #000000;
@@ -672,7 +673,7 @@ img {
 
   position: absolute;
   z-index: 1;
-  top: 55px;
+  top: 58px;
   right: 49px;
 
   color: #ffffff;
@@ -734,7 +735,7 @@ img {
 
 .slider-controls {
   position: absolute;
-  top: 323px;
+  top: 326px;
   right: 66px;
 }
 
@@ -743,7 +744,7 @@ img {
 
   width: 5px;
   height: 5px;
-  margin-right: 20px;
+  margin-right: 18px;
 
   cursor: pointer;
   vertical-align: top;
@@ -885,7 +886,7 @@ label.active-slider-control,
 .filter-form fieldset:nth-child(2) {
   margin-top: 6px;
   margin-bottom: 7px;
-  padding-bottom: 23px;
+  padding-bottom: 21px;
 
   border-bottom: 3px solid #000000;
 }
@@ -898,9 +899,10 @@ label.active-slider-control,
   margin-bottom: 24px;
 }
 
-.filter {
-  padding-top: 20px;
-  padding-bottom: 20px;
+.filter,
+.sort {
+  padding-top: 19px;
+  padding-bottom: 21px;
 }
 
 .filter b,
@@ -925,7 +927,7 @@ label.active-slider-control,
   font-family: Gilroy, arial, sans-serif;
 
   width: 200px;
-  margin-top: 70px;
+  margin-top: 68px;
   padding-top: 6px;
   padding-bottom: 3px;
 
@@ -1220,7 +1222,7 @@ label.active-slider-control,
   position: relative;
 
   width: 760px;
-  margin-bottom: 70px;
+  margin-bottom: 69px;
 
   background-color: #ebebeb;
 }
@@ -1462,6 +1464,7 @@ label.active-slider-control,
 
 .good-description {
   width: 360px;
+  margin-bottom: 2px;
 }
 
 .good-description h2 {
@@ -1474,7 +1477,7 @@ label.active-slider-control,
   float: left;
 
   width: 260px;
-  margin-top: 19px;
+  margin-top: 17px;
 }
 
 .good-description a {
@@ -1484,7 +1487,7 @@ label.active-slider-control,
 .good-description span {
   float: right;
 
-  margin-top: 13px;
+  margin-top: 11px;
 }
 
 .pager {
@@ -1521,7 +1524,7 @@ label.active-slider-control,
 }
 
 .pager .forward {
-  padding-right: 30px;
+  padding-right: 28px;
   padding-left: 30px;
 }
 
@@ -1587,9 +1590,9 @@ label.active-slider-control,
 .main-head {
   width: 1040px;
   margin: 0 auto;
-  margin-bottom: 40px;
-  padding-top: 14px;
-  padding-bottom: 3px;
+  margin-bottom: 44px;
+  padding-top: 2px;
+  padding-bottom: 0;
 }
 
 .main-head h1 {
@@ -1597,7 +1600,8 @@ label.active-slider-control,
   font-size: 47px;
   font-weight: bold;
 
-  margin-bottom: 30px;
+  margin-bottom: 28px;
+  margin-top: 25px;
 
   color: #000000;
 }
@@ -1721,7 +1725,7 @@ label.active-slider-control,
   font-family: Gilroy, arial, sans-serif;
   font-size: 18px;
   font-weight: bold;
-  line-height: 18px;
+  line-height: 20px;
 
   width: 160px;
   margin: 0;
@@ -1744,7 +1748,7 @@ label.active-slider-control,
 
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  margin-bottom: 95px;
+  margin-bottom: 94px;
 
   letter-spacing: 0.01em;
 
@@ -1843,7 +1847,7 @@ label.active-slider-control,
           box-sizing: border-box;
   width: 160px;
   height: 40px;
-  padding-top: 12px;
+  padding-top: 11px;
 
   text-align: center;
   vertical-align: top;
@@ -1851,7 +1855,7 @@ label.active-slider-control,
 
 .services-list div::after {
   position: relative;
-  top: -22px;
+  top: -24px;
 
   display: block;
 
@@ -1942,7 +1946,7 @@ label.active-slider-control,
   line-height: 47px;
 
   margin-top: 74px;
-  margin-bottom: 33px;
+  margin-bottom: 30px;
 
   color: #000000;
 }
@@ -1950,7 +1954,7 @@ label.active-slider-control,
 .brands-list {
   width: 1160px;
   margin: 0 auto;
-  margin-bottom: 85px;
+  margin-bottom: 83px;
   padding: 0;
 
   list-style: none;
@@ -2038,7 +2042,7 @@ label.active-slider-control,
 
 .about-us p {
   margin-top: 0;
-  margin-bottom: 28px;
+  margin-bottom: 30px;
 }
 
 .about-list {
@@ -2047,7 +2051,7 @@ label.active-slider-control,
   font-weight: bold;
   line-height: 40px;
 
-  margin-top: 67px;
+  margin-top: 65px;
   margin-bottom: 54px;
   padding-left: 0;
 
@@ -2086,7 +2090,7 @@ label.active-slider-control,
 
 .about-us img {
   margin-top: 10px;
-  margin-bottom: 59px;
+  margin-bottom: 58px;
 }
 
 .about-us a {
@@ -2182,7 +2186,7 @@ label.active-slider-control,
 }
 
 .footer-menu {
-  margin-bottom: 56px;
+  margin-bottom: 58px;
 }
 
 .footer-menu li {
@@ -2332,7 +2336,7 @@ label.active-slider-control,
 }
 
 .footer-phone p {
-  margin-bottom: 62px;
+  margin-bottom: 64px;
 }
 
 .footer-phone > a {
@@ -2575,8 +2579,8 @@ label.active-slider-control,
 	display: none;
   width: 960px;
   height: 550px;
-  margin-top: -275px;
-  margin-right: -480px;
+  margin-top: 464px;
+  margin-left: -480px;
 
   -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
           box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
