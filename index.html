@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/style.min.css">
 	<title>HTML Academy: Девайс</title>
 </head>
 <body>
@@ -70,7 +70,7 @@
 				</div>
 				<div class="slider-description">
 					<span class="slider-number">01</span>
-					<h2 class="h2">Делай селфи,<br> как Бен Стиллер!</h2>
+					<h2>Делай селфи,<br> как Бен Стиллер!</h2>
 					<p>Самая длинная палка для селфи доступна в нашем магазине.<br>
 						Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
 					</p>
@@ -183,15 +183,15 @@
 	        <div><label class="services-link" for="btn-6"><span>Кредит</span></label></div>
 				</div>
 				<div class="services delivery-slide" id="delivery-slide1">
-					<h2 class="h2">Доставка</h2>
+					<h2>Доставка</h2>
 					<p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>	
 				</div>
 				<div class="services warranty-slide hidden" id="delivery-slide2">
-					<h2 class="h2">Гарантия</h2>
+					<h2>Гарантия</h2>
 					<p>Если из-за возгарания купленного у нас товара у вас сгорит<br> дом — не переживайте, мы выдадим вам новый.<br> Товар, не дом, конечно же.</p>
 				</div>
 				<div class="services credit-slide hidden" id="delivery-slide3">
-					<h2 class="h2">Кредит</h2>
+					<h2>Кредит</h2>
 					<p>Залезть в долговую яму стало проще! Кредитные<br> консультанты подберут для вас наиболее выгодные<br> условия кредита. Выгодные для нашего банка, разумеется.</p>	
 				</div>
 			</div>
@@ -219,8 +219,8 @@
 			<div class="about-us">
 				<h2>Контакты</h2>
 				<p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-				<a class="js-open-map" href="#"><img src="img/map.jpg" width="560" height="222" alt="Карта"></a>
-				<div class="link-more about-us-more"><a href="#">Напишите нам</a></div>
+				<a class="js-open-map" href="form.html"><img src="img/map.jpg" width="560" height="222" alt="Карта"></a>
+				<div class="link-more about-us-more"><a class="js-open-write-us" href="form.html">Напишите нам</a></div>
 			</div>
 		</section>
 	</div>
@@ -255,7 +255,7 @@
 			</div>
 		</div>
 	</footer>
-	<div class="write-us hidden">
+	<div class="write-us">
 		<form action="get">
 			<button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
 			<div class="form-box">
@@ -275,30 +275,9 @@
 	</div>
 	<div class="modal-content-map">
 		<button class="modal-content-close modal-close-map" type="button" title="Закрыть">Закрыть</button>
-		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426" width="960" height="550" frameborder="0" style="border:0" allowfullscreen></iframe>
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426" width="960" height="550"  class="border0" style="border:0" allowfullscreen></iframe>
 		<div id="yandex-map"></div>
 	</div>
-<script>
-	var mapOpen = document.querySelector(".js-open-map");
-  var mapPopup = document.querySelector(".modal-content-map");
-  var mapClose = mapPopup.querySelector(".modal-content-close");
-  mapOpen.addEventListener("click", function(event) {
-    event.preventDefault();
-    mapPopup.classList.add("modal-content-show");
-  });
-
-  mapClose.addEventListener("click", function(event) {
-    event.preventDefault();
-    mapPopup.classList.remove("modal-content-show");
-  });
-
-  window.addEventListener("keydown", function(event) {
-    if (event.keyCode === 27) {
-      if (mapPopup.classList.contains("modal-content-show")) {
-        mapPopup.classList.remove("modal-content-show");
-      }
-    }
-  });
-</script>
+<script src="js/min.common.js"></script>
 </body>
 </html>
