@@ -213,7 +213,8 @@ img {
 .main-search-wrapper {
   position: relative;
 
-  width: 440px;
+  box-sizing: border-box;
+  width: 445px;
   margin-bottom: 27px;
 }
 
@@ -221,26 +222,19 @@ img {
   font-size: 15px;
   line-height: 36px;
 
-  position: relative;
-
   float: left;
 
-  width: 355px;
-  height: 49px;
+  box-sizing: border-box;
+  min-width: 356px;
+  min-height: 49px;
   padding-left: 37px;
 
   border: none;
-  border-bottom: 2px solid transparent;
   background-color: transparent;
 }
 
 .main-search:hover {
   cursor: pointer;
-}
-
-.main-search:focus {
-  border-bottom: 2px solid #000000;
-  outline: none;
 }
 
 .main-search::-webkit-input-placeholder {
@@ -297,19 +291,28 @@ img {
 }
 
 .button-find {
-  display: none;
+  visibility: hidden;
   float: right;
 
   width: 85px;
-  height: 49px;
+  min-height: 49px;
+
+  cursor: pointer;
 
   color: #000000;
-  border: 2px solid #000000;
+  border: none;
   background-color: transparent;
 }
 
+.main-search:focus {
+  border-bottom: 2px solid #000000;
+  outline: none;
+}
+
 .main-search:focus + .button-find {
-  display: block;
+  visibility: visible;
+
+  border: 2px solid #000000;
 }
 
 .button-find:hover {
@@ -322,8 +325,9 @@ img {
 }
 
 .button-find:active {
+  visibility: visible;
+
   color: rgba(255, 255, 255, 0.3);
-  outline: none;
 }
 
 .catalog {
@@ -379,7 +383,7 @@ img {
 
   width: 500px;
   margin-top: 6px;
-  margin-bottom: 32px;
+  margin-bottom: 33px;
 
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
@@ -1313,11 +1317,11 @@ label.active-slider-control,
 }
 
 .sort-icons a:first-child:focus::before {
-  border-bottom-color: #000000000;
+  border-bottom-color: #000000;
 }
 
 .sort-icons a:first-child.active:before {
-  border-bottom-color: #000000000;
+  border-bottom-color: #000000;
 }
 
 .sort-icons a:last-child:hover::before {
@@ -1405,7 +1409,7 @@ label.active-slider-control,
 
 .good-item:nth-last-child(2),
 .good-item:last-child {
-  margin-bottom: 27px;
+  margin-bottom: 29px;
 }
 
 .link-to-cart {
@@ -1708,7 +1712,7 @@ label.active-slider-control,
 }
 
 .popular {
-  margin-bottom: 156px;
+  margin-bottom: 158px;
 }
 
 .popular-list {
@@ -1768,7 +1772,7 @@ label.active-slider-control,
 .popular-item:hover .popular-link {
   background-color: #f0c52e;
 }
-.popular-item:focus img {
+.popular-item:active img {
   opacity: 0.3;
 }
 
@@ -1836,6 +1840,10 @@ label.active-slider-control,
 
 .services a {
   color: #000000;
+}
+
+.services h2 {
+  margin-bottom: 60px;
 }
 
 .services-wrapper > input[type='radio'] {
@@ -1928,9 +1936,12 @@ label.active-slider-control,
   background-color: #000000;
 }
 
+.services-link:focus {
+  background-color: #000000;
+}
+
 .services-link:active span {
   color: #f7e184;
-  background-color: #000000;
 }
 
 .active-services-link {
@@ -2005,7 +2016,7 @@ label.active-slider-control,
 .brands-list {
   width: 1160px;
   margin: 0 auto;
-  margin-bottom: 83px;
+  margin-bottom: 90px;
   padding: 0;
 
   list-style: none;
@@ -2014,22 +2025,46 @@ label.active-slider-control,
 .brands-list li {
   float: left;
 
-  width: 260px;
   margin-right: 39px;
-
-  heigth: 100px;
 }
 
+.brands-list a {
+  display: block;
 
+  width: 260px;
+  height: 100px;
+}
 
-.brands-list img {
-  -webkit-filter: grayscale(100%);
-     -moz-filter: grayscale(100%);
-      -ms-filter: grayscale(100%);
-       -o-filter: grayscale(100%);
-          filter: grayscale(100%);
-  -webkit-filter: gray;
-          filter: gray; /* IE 6-9 */
+.client-1 {
+  background-image: url('../img/client-1.jpg');
+}
+
+.client-2 {
+  background-image: url('../img/client-2.jpg');
+}
+
+.client-3 {
+  background-image: url('../img/client-3.jpg');
+}
+
+.client-4 {
+  background-image: url('../img/client-4.jpg');
+}
+
+.client-1:hover {
+  background-image: url('../img/client-color-1.jpg');
+}
+
+.client-2:hover {
+  background-image: url('../img/client-color-2.jpg');
+}
+
+.client-3:hover {
+  background-image: url('../img/client-color-3.jpg');
+}
+
+.client-4:hover {
+  background-image: url('../img/client-color-4.jpg');
 }
 
 .brands-list img:hover {
@@ -2044,7 +2079,7 @@ label.active-slider-control,
 .about {
   width: 1160px;
   margin: 0 auto;
-  margin-bottom: 26px;
+  margin-bottom: 24px;
 }
 
 .about a {
@@ -2065,7 +2100,7 @@ label.active-slider-control,
   line-height: auto;
 
   margin-top: 55px;
-  margin-bottom: 51px;
+  margin-bottom: 53px;
 
   color: #000000;
 }
@@ -2107,7 +2142,7 @@ label.active-slider-control,
   font-weight: bold;
   line-height: 40px;
 
-  margin-top: 65px;
+  margin-top: 66px;
   margin-bottom: 54px;
   padding-left: 0;
 
@@ -2126,13 +2161,13 @@ label.active-slider-control,
 
 .about-list li::before {
   position: absolute;
-  top: 15px;
+  top: 14px;
   left: 0;
 
   display: block;
 
-  width: 10px;
-  height: 10px;
+  width: 5px;
+  height: 5px;
 
   content: '';
 
@@ -2146,7 +2181,7 @@ label.active-slider-control,
 
 .about-us img {
   margin-top: 10px;
-  margin-bottom: 58px;
+  margin-bottom: 59px;
 }
 
 .about-us a {
@@ -2291,33 +2326,38 @@ label.active-slider-control,
 .footer-phone {
   float: right;
 
-  width: 300px;
+  width: 350px;
 
   text-align: right;
 }
 
 .footer-phone ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-
+  width: 350px;
   margin: 0;
-  margin-bottom: 39px;
+  margin-bottom: 34px;
   padding: 0;
 
   list-style: none;
-
-  -webkit-box-pack: end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
 }
 
 .footer-phone li {
+  display: inline-block;
+
   margin-left: 61px;
+
+  vertical-align: top;
+}
+
+.footer-phone li:first-child {
+  margin-left: 0;
 }
 
 .footer-phone li:nth-child(2) {
   margin-left: 70px;
+}
+
+.footer-phone li:last-child {
+  margin-right: 0;
 }
 
 .footer-phone a {
@@ -2348,7 +2388,7 @@ label.active-slider-control,
 
 .footer-enter-link::before {
   position: absolute;
-  top: 8px;
+  top: 6px;
   left: -25px;
 
   width: 13px;
@@ -2363,7 +2403,7 @@ label.active-slider-control,
 
 .footer-compare-link::before {
   position: absolute;
-  top: 10px;
+  top: 8px;
   left: -25px;
 
   width: 10px;
@@ -2378,7 +2418,7 @@ label.active-slider-control,
 
 .footer-cart-link::before {
   position: absolute;
-  top: 8px;
+  top: 6px;
   left: -25px;
 
   width: 12px;
@@ -2657,5 +2697,5 @@ label.active-slider-control,
 }
 
 .border0 {
-	border: 0;
+  border: 0;
 }

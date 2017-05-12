@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="css/style.min.css">
+	<link rel="stylesheet" href="css/style.css">
 	<title>HTML Academy: Девайс</title>
 </head>
 <body>
@@ -14,10 +14,10 @@
 				<nav>
 					<div class="top-section clearfix">
 						<div class="header-input">
-							<div class="main-search-wrapper">
+							<div class="main-search-wrapper clearfix">
 								<form class="clearfix" action="https://echo.htmlacademy.ru" method="get">
-								  <input class="main-search" type="search" placeholder="Поиск по сайту">
-								  <button class="button-find">Найти</button>
+								  <input class="main-search" type="search" name="search" placeholder="Поиск по сайту">
+								  <input class="button-find" type="submit" name="submit" value="Найти">
 								</form>
 							</div>
 							<a class="catalog" href="catalog.html">Каталог товаров</a>
@@ -199,10 +199,10 @@
 	</section>
 	<div class="wrapper">
 		<ul class="brands-list clearfix">
-			<li><a href="#"><img src="img/client-color-1.jpg" width="260" height="100" alt="client-1"></a></li>
-			<li><a href="#"><img src="img/client-color-2.jpg" width="260" height="100" alt="client-2"></a></li>
-			<li><a href="#"><img src="img/client-color-3.jpg" width="260" height="100" alt="client-3"></a></li>
-			<li><a href="#"><img src="img/client-color-4.jpg" width="260" height="100" alt="client-4"></a></li>
+			<li><a class="client-1" href="#"><!-- <img src="img/client-color-1.jpg" width="260" height="100" alt="client-1"> --></a></li>
+			<li><a class="client-2" href="#"><!-- <img src="img/client-color-2.jpg" width="260" height="100" alt="client-2"> --></a></li>
+			<li><a class="client-3" href="#"><!-- <img src="img/client-color-3.jpg" width="260" height="100" alt="client-3"> --></a></li>
+			<li><a class="client-4" href="#"><!-- <img src="img/client-color-4.jpg" width="260" height="100" alt="client-4"> --></a></li>
 		</ul>
 		<section class="about clearfix">
 			<div class="about-us">
@@ -245,7 +245,7 @@
 				</ul>
 			</div>
 			<div class="footer-phone">
-				<ul>
+				<ul class="clearfix">
 					<li><a class="footer-enter-link" href="#">Войти</a></li>
 					<li><a class="footer-compare-link" href="#">Сравнить</a></li>
 					<li><a class="footer-cart-link" href="#">Корзина</a></li>
@@ -265,11 +265,11 @@
 				</div>
 				<div class="form-data-box">
 					<label for="your-email">Ваш e-mail:</label>
-					<input type="text" name="name" id="your-email" placeholder="Для отправки ответа">
+					<input type="text" name="email" id="your-email" placeholder="Для отправки ответа">
 				</div>
 			</div>
 			<label for="your-text">Текст письма:</label>
-			<textarea placeholder="В свободной форме" id="your-text"></textarea>
+			<textarea name="text" placeholder="В свободной форме" id="your-text"></textarea>
 			<div class="show-button-form"><input type="submit" value="Отправить"></div>
 		</form>
 	</div>

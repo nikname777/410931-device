@@ -14,13 +14,13 @@
 				<nav>
 					<div class="top-section clearfix">
 						<div class="header-input">
-							<div class="main-search-wrapper">
+							<div class="main-search-wrapper clearfix">
 								<form class="clearfix" action="https://echo.htmlacademy.ru" method="get">
-								  <input class="main-search" type="search" placeholder="Поиск по сайту">
-								  <button class="button-find">Найти</button>
+								  <input class="main-search" type="search" name="search" placeholder="Поиск по сайту">
+								  <input class="button-find" type="submit" name="submit" value="Найти">
 								</form>
 							</div>
-							<a class="catalog">Каталог товаров</a>
+							<a class="catalog" href="catalog.html">Каталог товаров</a>
 						</div>
 						<div class="header-cart">
 							<div class="enter">
@@ -112,7 +112,7 @@
 									<li><input class="input-bluetooth-selection" type="radio" name="bluetooth" id="no"><label for="no">Нет</label></li>
 								</ul>
 							</fieldset>
-							<div class="show-button-form"><input type="submit" value="Показать"></div>
+							<div class="show-button-form"><input type="submit" name="result" value="Показать"></div>
 						</form>
 					</aside>
 					<div class="goods">
@@ -194,7 +194,7 @@
 			</div>
 		</div>
 	</main>
-	<footer class="footer">
+	<footer class="footer footer-catalog">
 		<div class="footer-wrapper clearfix">
 			<div class="footer-logo">
 				<div class="footer-logo-img">
