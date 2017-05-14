@@ -1,14 +1,20 @@
-	var mapOpen = document.querySelector(".js-open-map");
-  var mapPopup = document.querySelector(".modal-content-map");
-  var mapClose = mapPopup.querySelector(".modal-content-close");
-
   var writePopupOpen = document.querySelector(".js-open-write-us");
   var writePopup = document.querySelector(".write-us");
   var writeClose = writePopup.querySelector(".modal-content-close");
+  var login = writePopup.querySelector("[name=name]");
+
+  var mapOpen = document.querySelector(".js-open-map");
+  var mapPopup = document.querySelector(".modal-content-map");
+  var mapClose = mapPopup.querySelector(".modal-content-close");
+
+  var form = writePopup.querySelector("form");
+  var nameWriteUs = writePopup.querySelector("[name=name]");
+  var emailWriteUs = writePopup.querySelector("[name=email]"); 
 
   writePopupOpen.addEventListener("click", function(event) {
     event.preventDefault();
     writePopup.classList.add("modal-content-show");
+    nameWriteUs.focus();
   });
 
   writeClose.addEventListener("click", function(event) {
@@ -23,10 +29,6 @@
       }
     }
   });
-
-
-
-
 
   mapOpen.addEventListener("click", function(event) {
     event.preventDefault();
